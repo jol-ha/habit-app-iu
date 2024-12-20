@@ -89,4 +89,6 @@ The app consists of several Python modules and CSV files that handle different a
     Choose option [d] to remove a habit from the app.
     Follow the prompts to select and delete a habit.
 
+2.0 test_habit_tracker.py
 
+    Functions of the habit_tracker.py and sub-files were positively checked by the unittest.
