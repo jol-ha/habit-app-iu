@@ -1,0 +1,39 @@
+
+                                       +----------------------------+
+                                       |    habit_tracker.py        |
+                                       |  habit_tracker.habit()     |
+                                       +----------------------------+
+                                                   |
+       +------------------------+------------+--------------+-------------+
+       |                        |            |              |             |
++---------------+ +-----------------------+  |     +-------------------+  |
+| [i]           | | [e]                   |  |     | [d]               |  |
+|initiation.py >| |> entry.py            >|  |     |> delete_habit.py >|  |
+|   add_habit() | |   enter_date()        |  |     |   delete_habit()  |  |
+|               | |   enter(csv_file_path)|  |     |                   |  |
++---------------+ +-----------------------+  |     +-------------------+  |
+                                             |                            |
+                                             |                            |
+                                             |                            |
+	      +----------------------------------+---------------+            |
+    	  | [c]                                              |            |
+      	  |>calculations.py                                  |            |
+     	  |    calculations(csv_file_path)                   |            | 
+     	  |    dict_headers(csv_file_path)                   |            | 
+    	  |    remove_duplicates(csv_file_path)              |            | 
+     	  |    select_daily_columns(cleaned_df, row_index=1) |            | 
+      	  |    count_daily_results(daily_df)                 |            | 
+     	  |    max_daily_streak(series)                      |            | 
+      	  |    select_weekly_columns(cleaned_df, row_index=1)|            | 
+     	  |    max_weekly_streak(series)                     |            | 
+     	  |    count_weekly_results(weekly_df)               |            | 
+          +--------------------------------------------------+            |
+                                                                          | 
+legend:                                            +----------------------+ 
+     contributs to csv-file >                      | csv-file             |
+   > extracts data from csv_file                   |    raw_data.csv      |      
+   > extracts from and contributes to csv_file >   |    test_data_file.csv|
+                                                   +----------------------+          
+                                                              
+                        	                     
+
